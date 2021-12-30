@@ -17,7 +17,9 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+		"dc:up": "cd docker && docker-compose up",
+		"start:frontend": "cd frontend && npm run start",
+    "start:backend": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "author": "",
   "license": "ISC"
